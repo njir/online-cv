@@ -3,9 +3,15 @@
                  
      <div class="sidebar-wrapper">
             <div class="profile-container">
+<<<<<<< HEAD
                 <img class="profile" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
                 <h1 class="name">{% if site.name %}{{site.name}}{% else %}HyungTak Jin{% endif %}</h1>
                 <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Junior Developer{% endif %}</h3>
+=======
+                <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
+                <h1 class="name">{% if site.name %}{{site.name}}{% else %}Alan Doe{% endif %}</h1>
+                <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Full Stack Developer{% endif %}</h3>
+>>>>>>> 5fd6a88ff9c8b6ef8d9ea50626e082d8a2c66c63
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
@@ -24,7 +30,11 @@
                     {% endif %}
                     
                     {% if site.linkedin %}
+<<<<<<< HEAD
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://kr.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+=======
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+>>>>>>> 5fd6a88ff9c8b6ef8d9ea50626e082d8a2c66c63
                     {% else %}
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://kr.linkedin.com/in/hyungtak" target="_blank">kr.linkedin.com/in/hyungtak</a></li>
                     {% endif %}
@@ -40,6 +50,7 @@
            {% include education.html %}
            {% include language.html %}
            {% include interests.html %}
+           {% include about.html %}
         
             
         </div><!--//sidebar-wrapper-->
